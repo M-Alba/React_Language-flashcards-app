@@ -1,9 +1,11 @@
 import styles from './App.module.css';
 
+import words from '../../json/wordsData';
+
 import Header from '../Header/Header';
 import Table from '../Table/Table';
 import Footer from '../Footer/Footer';
-import WordCard from '../WordCard/WordCard';
+import CardCollection from '../CardCollection/CardCollection';
 /*import Training from '../Training/Training';*/
 
 
@@ -12,7 +14,7 @@ function App() {
     <div className = {styles.App}>
       <Header />
       <Table />
-      <WordCard />
+      <CardCollection words={words}/>
       <Footer />
     </div>
   );
