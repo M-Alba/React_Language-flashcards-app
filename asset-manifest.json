@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React_Language-flashcards-app/static/css/main.e2e74f18.css",
-    "main.js": "/React_Language-flashcards-app/static/js/main.955f1231.js",
+    "main.css": "/React_Language-flashcards-app/static/css/main.d0077a1c.css",
+    "main.js": "/React_Language-flashcards-app/static/js/main.953850b5.js",
     "index.html": "/React_Language-flashcards-app/index.html",
-    "main.e2e74f18.css.map": "/React_Language-flashcards-app/static/css/main.e2e74f18.css.map",
-    "main.955f1231.js.map": "/React_Language-flashcards-app/static/js/main.955f1231.js.map"
+    "main.d0077a1c.css.map": "/React_Language-flashcards-app/static/css/main.d0077a1c.css.map",
+    "main.953850b5.js.map": "/React_Language-flashcards-app/static/js/main.953850b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2e74f18.css",
-    "static/js/main.955f1231.js"
+    "static/css/main.d0077a1c.css",
+    "static/js/main.953850b5.js"
   ]
 }
