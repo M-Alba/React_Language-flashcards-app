@@ -6,24 +6,22 @@ import WordCard from '../WordCard/WordCard';
 
 export default function CardCollection({words}) {
 
-    const [click, setClick] = useState(false);
     const [index, setIndex] = useState(0);
 
     const showPreviousCard = () => {
-        let cardIndex = index;
-        if (cardIndex !== 0) {
-            cardIndex--;
-            setIndex(cardIndex);
-        }
-        else if (cardIndex === 0) {
+        if (index === 0) {
+            setIndex(words.length - 1);
+        } else if (index > 0) {
+            setIndex(index - 1);
+            }
+    };
+    const showNextCard = () => {
+        if (index === words.length - 1) {
             setIndex(0);
+        } else if (index < words.length - 1) {
+            setIndex(index + 1);
         }
-        setClick(false);
-    }
-
-    /*const showNextCard = () => {
-
-    }*/
+    };
 
     return (
         <div className={styles.wrapper}>
@@ -34,8 +32,18 @@ export default function CardCollection({words}) {
                         transcription = {words[index].transcription}
                         russian = {words[index].russian}
                     />
-                <button>Вперед</button>
+                <button className={styles.btn} onClick={showNextCard}>Вперед</button>
             </div>
         </div>
     )
 }
+
+/*CardCollection.defaultProps = {
+    words: [
+        {
+            english: 'No words available',
+            transcription: '',
+            russian: '',
+        },
+    ],
+};*/

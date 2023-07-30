@@ -3,7 +3,6 @@ import { useState } from 'react';
 import styles from './WordCard.module.css';
 
 export default function WordCard(props) {
-    /*const { english, transcription, russian } = item;*/
 
     const [click, setClick] = useState(false);
 

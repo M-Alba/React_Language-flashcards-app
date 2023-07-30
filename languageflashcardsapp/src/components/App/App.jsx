@@ -1,23 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import styles from './App.module.css';
 
 import words from '../../json/wordsData';
 
 import Header from '../Header/Header';
 import Table from '../Table/Table';
-import Footer from '../Footer/Footer';
 import CardCollection from '../CardCollection/CardCollection';
-/*import Training from '../Training/Training';*/
+import Footer from '../Footer/Footer';
 
-
-function App() {
+export default function App() {
   return (
     <div className = {styles.App}>
-      <Header />
-      <Table />
-      <CardCollection words={words}/>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Table />} />
+          <Route path="/game" element={<CardCollection words={words}/>} />
+        </Routes>
+      </Router>
       <Footer />
     </div>
   );
 }
-
-export default App;
