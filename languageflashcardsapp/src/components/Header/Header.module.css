@@ -8,10 +8,10 @@
 }
 
 .wrapper {
-    max-width: 1200px;
-	margin: 0 auto;
     display: flex;
     justify-content: space-around;
+	margin: 0 auto;
+    max-width: 1200px;
 }
 
 .nav {
